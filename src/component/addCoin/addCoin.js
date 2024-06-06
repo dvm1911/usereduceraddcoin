@@ -511,15 +511,13 @@ const AddCoin = () => {
     const saveLogo = (e) => {
         e.preventDefault();
         if(reqFields.coinName.length !== 0){
-            console.log('save start')
-                const logoRef = logoBannerDb.ref(`coins/${reqFields.coinName}/logo`)
+                logoBannerDb.ref(`coins/${reqFields.coinName}/logo`)
                 .put(uiFields.coinLogoInpRef)
                 .on("state_changed", alert("success"), alert, () => {
                     logoBannerDb.ref(`coins/${reqFields.coinName}`).child(`logo`)
                     .getDownloadURL()
                     .then((url) => {reqFieldsDispatch({type: "setcoinLogo", payload: url})})
                 });
-                console.log('save end')
             uiFieldsDispatch(
                 {type: "saveLogo"}
             )
@@ -533,7 +531,7 @@ const AddCoin = () => {
     const saveBanner = (e) => {
         e.preventDefault();
         if(reqFields.coinName.length !== 0){
-            const bannerRef = logoBannerDb.ref(`coins/${reqFields.coinName}/banner`)
+                logoBannerDb.ref(`coins/${reqFields.coinName}/banner`)
                 .put(uiFields.coinBannerInpRef)
                 .on("state_changed", alert("success"), alert,  () => {
                     logoBannerDb.ref(`coins/${reqFields.coinName}`).child(`banner`)
