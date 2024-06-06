@@ -1,5 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getStorage } from 'firebase/storage';
+
+import firebase from "firebase/compat/app";
+import 'firebase/compat/storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAiDtzYsizNJatnA1zou74ojNdOCugkXeM",
@@ -13,6 +14,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
-export const logoBannerDb = getStorage(app);
+//Export
+export const logoBannerDb = firebase.storage();
+export default firebase;
