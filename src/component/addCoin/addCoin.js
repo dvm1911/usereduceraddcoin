@@ -42,9 +42,9 @@ const AddCoin = () => {
 
         coinDescription: '',
 
-        coinLogo: 'HAVE INITIAL VALUE',
+        coinLogo: '',
 
-        coinBanner: 'dONT hAVE iNITIAL vALUE',
+        coinBanner: '',
 
         coinVote: 0,
 
@@ -461,12 +461,10 @@ const AddCoin = () => {
                     coinDescCounter: 0,
 
                     coinLogoInpRef: {},
-                    imgLogoUrl: [],
                     showLogoNameonUpload: false,
                     errNoCoinNameL: false,
 
                     coinBannerInpRef: {},
-                    imgBannerUrl: [],
                     errNoCoinNameB: false,
                     showBannerNameonUpload: false,
 
