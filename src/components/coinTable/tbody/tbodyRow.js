@@ -4,16 +4,15 @@ import { Link } from 'react-router-dom';
 
 
 const TbodyRow = ({coin, coinUpVoteOn }) => {
-
-    let age = 0;
-        let detAge = '';
-
-    if(coin.coinLaunchDate){
+    
         const coinDate = coin.coinLaunchDate.split("-");
         let currDate = new Date();
         let month = currDate.getMonth();
         let date = currDate.getDate();
         let year = currDate.getFullYear();
+
+        let age = 0;
+        let detAge = ``;
 
         if(year > coinDate[0]){
             age = year - coinDate[0];
@@ -27,20 +26,16 @@ const TbodyRow = ({coin, coinUpVoteOn }) => {
             else if(month === coinDate[1]){
                 if(date > coinDate[2]){
                     age = date - coinDate[2];
-                    detAge = `${age} Days`; 
+                    detAge = `${age} Days`;
+                    console.log(age) 
                 }
                 else if(date === coinDate[2]){
                     detAge = `< 1 Day`; 
-                } else {
-                    detAge = `Not yet Launched`; 
                 }  
-            } else {
-                detAge = `Not yet Launched`; 
-            }  
-        } else {
-            detAge = `Not yet Launched`; 
-        }
-    } 
+            } 
+        }    
+        
+        
    
 
     return (

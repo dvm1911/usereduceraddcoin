@@ -19,10 +19,8 @@ const Header = () => {
 
     const token = localStorage.getItem("token");
     const [ user, setuser ] = useState({});
-    const [ userFetched, setuserFetched ] = useState(false);
 
     useEffect(() => {
-       if(!userFetched){
         const userDetails = async () => {
             try {
                 const res = await fetch("https://coinscore-cc-backend.onrender.com/api/auth/getUser", {
@@ -33,7 +31,7 @@ const Header = () => {
                 const data = await res.json();
                 console.log(data)
                 setuser(data);
-                setuserFetched(true);
+                
             } catch (error) {
                 console.log(error)
             }
@@ -44,7 +42,6 @@ const Header = () => {
         if(token){
             userDetails();
         }
-       }
 
     })
 
