@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useReducer, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import coinLogo from "./assets/Ellipse 14.png";
