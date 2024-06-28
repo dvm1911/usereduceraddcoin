@@ -1,0 +1,279 @@
+
+
+.spaceBtwn{
+    justify-content: space-between;
+}
+
+.itmCenter{
+    align-items: center;
+    justify-content: center;
+}
+
+.marginBtm{
+    margin-bottom: 28px;
+}
+
+.coinInfoOuter{
+    flex-direction: column;
+    width: 769px;
+    flex-direction: column;
+    border-radius: 18px;
+    background: #252836;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 50px;
+}
+
+.coinInfoLogoName{
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+}
+
+.coinInfoLogo{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.coinInfoLogo>img{
+    width: 100%;
+    height: 100%;
+}
+
+.coinInfoAcro{
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #303343;
+    color: #6B5DCC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; /* 72.222% */
+    letter-spacing: 0.5px;
+}
+
+.BSCAddress{
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coinInfoBSCAdd{
+    
+    text-align: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #303343;
+    height: 32px;
+    padding: 10px;
+    
+}
+
+.coinInfoBSCAddTxt{
+    margin-right: 10px;
+    color: #6B5DCC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; /* 72.222% */
+    letter-spacing: 0.5px;
+}
+
+.coinInfoBSCAddVal{
+  
+    color: #7C7E86;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.5px;
+}
+
+.coinInfoBSCCopy{
+    margin-left: 15px;
+    width: 21.333px;
+    height: 21.333px;
+    flex-shrink: 0;
+}
+
+.coinAdditionalInfo{
+    border-radius: 12px;
+    background: #303343;
+    width: 576px;
+    padding: 39px;
+    flex-direction: column;
+    align-self: center;
+}
+
+.coinInfoRate{
+    color: #6B5DCC;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; /* 43.333% */
+    letter-spacing: 0.5px;
+}
+
+.coinInfoRank{
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #6B5DCC;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; /* 72.222% */
+    letter-spacing: 0.5px;
+}
+
+.coinAdditionalInfoLV{
+    color: #C3C3C3;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13px; /* 59.091% */
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+
+}
+
+.coinAdditionalInfoRV{
+    color: #A6A6A6;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; /* 72.222% */
+    letter-spacing: 0.5px;
+}
+
+.coinInfoVoteCounter{
+    width: 65px;
+    height: 32px;
+    flex-shrink: 0;
+    background: #1F1D2B;
+    color: #6B5DCC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; 
+    letter-spacing: 0.5px;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-between;
+}
+
+.voteNum{
+    margin: 4px;
+}
+
+.upVote-sym{
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+    background: #6B5DCC;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#upVote-arw{
+    width: 20px;
+    height: 20px;
+}
+
+.coinInfoAbout{
+    align-self: center;
+    width: 576px;
+    padding: 40px;
+    border-radius: 12px;
+    background: #303343;
+    margin: 40px;
+}
+
+.coinInfoAboutTxt{
+    color: #FFF;
+    text-align: justify;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+
+.coinInfoAboutDescription{
+    color: #FFF;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+
+.coinInfoAboutSocials{
+    justify-content: space-evenly;
+}
+
+.coinInfoReportBtn{
+    width: 126px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #303343;
+    align-items: center;
+    justify-content: center;
+    color: #6B5DCC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; /* 72.222% */
+    letter-spacing: 0.5px;
+    padding: 10px;
+}
+
+.coinInfoReportBtn>img{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.coinInfoShareBtn{
+    width: 126px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #303343;
+    align-items: center;
+    justify-content: center;
+    color: #6B5DCC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; /* 72.222% */
+    letter-spacing: 0.5px;
+    padding: 10px;
+}
+
+.coinInfoShareBtn>img{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    width: 17.999px;
+    height: 19.001px;
+    flex-shrink: 0;
+}
+

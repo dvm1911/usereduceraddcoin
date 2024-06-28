@@ -1,0 +1,96 @@
+.mainOuter{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logInOuter{
+    margin: 60px;
+    width: 680px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: #252836;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 40px;
+    flex-direction: column;
+}
+
+.logInHeading{
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+
+}
+
+.logIntxt{
+    margin-bottom: 2px;
+    color: #FFF;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 0.5px;
+}
+
+.logInSignUp{
+    margin-bottom: 40px;
+    color: #676767;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    letter-spacing: 0.5px;
+
+}
+
+.logInSignUpAnc{
+    color: #6B5DCC;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.logInFormTag{
+    flex-direction: column;
+}
+
+.logInFormTxt{
+    margin-bottom: 20px;
+    color: #FFF;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 0.5px;
+
+}
+
+.logInFormInp{
+    margin-bottom: 20px;
+    width: 539px;
+    border-radius: 12px;
+    background: #303343;
+    height: 48px;
+    padding: 10px;
+}
+
+.LogInBtn{
+    width: 133.688px;
+    height: 46px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    border-radius: 12px;
+    background: #6B5DCC;
+    align-self: flex-end;
+}

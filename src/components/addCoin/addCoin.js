@@ -1,15 +1,15 @@
-import coinGecko from './coingecko__78343 1.png'
-import coinswapLogo from './DNZDqtH2_400x400 1.png'
-import pancakeLogo from './Home _ PancakeSwap - $13.450-1 1.png'
-import poocoinLogo from './poocoin512 2.png'
+import coinGecko from './assets/coingecko__78343 1.png'
+import coinswapLogo from './assets/DNZDqtH2_400x400 1.png'
+import pancakeLogo from './assets/Home _ PancakeSwap - $13.450-1 1.png'
+import poocoinLogo from './assets/poocoin512 2.png'
 
-import instagramLogo from './instagram-fill (1) 2.png'
-import youtubeLogo from './Vector.png'
-import redditLogo from './reddit-fill 2.png'
-import telegramLogo from './telegram-fill 2.png'
-import twitterLogo from './twitter-fill (1) 5.png'
-import addImgLogo from './Plus.png'
-import webLogo from './Group 599.png'
+import instagramLogo from './assets/instagram-fill (1) 2.png'
+import youtubeLogo from './assets/Vector.png'
+import redditLogo from './assets/reddit-fill 2.png'
+import telegramLogo from './assets/telegram-fill 2.png'
+import twitterLogo from './assets/twitter-fill (1) 5.png'
+import addImgLogo from './assets/Plus.png'
+import webLogo from './assets/Group 599.png'
 
 
 import AddCoinAlert from '../alerts/addCoinAlert/addCoinAlert'
@@ -21,7 +21,9 @@ import { logoBannerDb } from '../firebaseConfig/firebaseConfig'
 
 
 
+
 const AddCoin = () => {
+
 
     const intialreqFields  = {
         coinName: '',
@@ -489,11 +491,6 @@ const AddCoin = () => {
                     errMsg: false
                     
                 }
-            case "closePopUp": 
-            return {
-                ...state,
-                showPopUp: false
-            }
 
             default:
               return state;
@@ -636,9 +633,12 @@ const AddCoin = () => {
     
 
     return(
-        <div onClick={() => {uiFieldsDispatch({ type: "closePopUp" })}}  className='flex flex-col items-center justify-center'>
+        <div>
+            
+        <div className='flex flex-col items-center justify-center m-16'>
+            
          
-                        <div className="contentOuter flex flex-col px-8 py-8 shadow-md">
+                        <div className="rounded-xl contentOuter flex flex-col p-8">
                     <div>
                         <h2 className="primaryColorW font-semibold text-3xl">Add your coin</h2>
                         <p className="text-justify primaryColorW font-light tracking-wide text-lg">Fill this quick form, and our team will contact you shortly</p>
@@ -648,34 +648,34 @@ const AddCoin = () => {
 
                             <label className="text-justify primaryColorW font-light tracking-wide text-lg" name="coinName">Coin Name</label>
                             {uiFields.errcoinName && <p className = "text-xs font-normal text-justify text-red-600">*Please fill the required fields</p>}
-                            <input value={reqFields.coinName} onChange={(e) => {reqFieldsDispatch({ type: "coinNameInp", payload: e.target.value})}} className ="my-8 p-0.8 h-12 w-135 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinName" placeholder="enter your coin name" required />
+                            <input value={reqFields.coinName} onChange={(e) => {reqFieldsDispatch({ type: "coinNameInp", payload: e.target.value})}} className ="my-8 p-0.8 h-12 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinName" placeholder="enter your coin name" required />
 
                             <label className="text-justify primaryColorW font-light tracking-wide text-lg" name="coinAcro">Coin Acronym</label>
                             {uiFields.errcoinAcro && <p className = "text-xs font-normal text-justify text-red-600">*Please fill the required fields</p>}
-                            <input value={reqFields.coinAcro} onChange={(e) => {reqFieldsDispatch({ type: "coinAcroInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 w-135 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinAcro" placeholder="enter your coin acronym" required />
+                            <input value={reqFields.coinAcro} onChange={(e) => {reqFieldsDispatch({ type: "coinAcroInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinAcro" placeholder="enter your coin acronym" required />
 
                             <label className="text-justify primaryColorW font-light tracking-wide text-lg" name="coinBSC">Address BSC</label>
-                            <input value={reqFields.coinAddressBSC}  onChange={(e) => {reqFieldsDispatch({ type: "coinAddressBSCInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 w-135 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinBSC" placeholder="enter your coin BSC address"/>
+                            <input value={reqFields.coinAddressBSC}  onChange={(e) => {reqFieldsDispatch({ type: "coinAddressBSCInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinBSC" placeholder="enter your coin BSC address"/>
 
                             <label className="text-justify primaryColorW font-light tracking-wide text-lg" name="coinETH">Address ETH</label>
-                            <input value={reqFields.coinAddressETH} onChange={(e) => {reqFieldsDispatch({ type: "coinAddressETHInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 w-135 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinETH" placeholder="enter your coin ETH adddress"/>
+                            <input value={reqFields.coinAddressETH} onChange={(e) => {reqFieldsDispatch({ type: "coinAddressETHInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinETH" placeholder="enter your coin ETH adddress"/>
 
                             <label className="text-justify primaryColorW font-light tracking-wide text-lg" name="coinTRC">Address TRC</label>
-                            <input value={reqFields.coinAddressTRC} onChange={(e) => {reqFieldsDispatch({ type: "coinAddressTRCInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 w-135 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinTRC" placeholder="enter your coin TRC address"/>
+                            <input value={reqFields.coinAddressTRC} onChange={(e) => {reqFieldsDispatch({ type: "coinAddressTRCInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinTRC" placeholder="enter your coin TRC address"/>
 
                             <label className="text-justify primaryColorW font-light tracking-wide text-lg" name="addCoinMC">Market Cap</label>
-                            <input value={reqFields.coinMarketCap} onChange={(e) => {reqFieldsDispatch({ type: "coinMarketCapInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 w-135 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="addCoinMC" placeholder="What's your coin Market Cap"/>
+                            <input value={reqFields.coinMarketCap} onChange={(e) => {reqFieldsDispatch({ type: "coinMarketCapInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="addCoinMC" placeholder="What's your coin Market Cap"/>
 
                             <label className="text-justify primaryColorW font-light tracking-wide text-lg" name="coinPrice">Price</label>
-                            <input value={reqFields.coinPrice} onChange={(e) => {reqFieldsDispatch({ type: "coinPriceInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 w-135 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinPrice" placeholder="what's the price of your coin"/>
+                            <input value={reqFields.coinPrice} onChange={(e) => {reqFieldsDispatch({ type: "coinPriceInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 rounded-xl inputFieldColor primaryColorW pl-2.5" type="text" id="coinPrice" placeholder="what's the price of your coin"/>
 
                             <label className="text-justify primaryColorW font-light tracking-wide text-lg" name="coinLaunch">Launch Date</label>
-                            <input value={reqFields.coinLaunchDate} onChange={ (e) => {reqFieldsDispatch({ type: "coinLaunchDateInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 w-135 rounded-xl inputFieldColor primaryColorW pl-2.5" type="date" id="coinLaunch" placeholder="enter your coin name"/>
+                            <input value={reqFields.coinLaunchDate} onChange={ (e) => {reqFieldsDispatch({ type: "coinLaunchDateInp", payload: e.target.value})}} className="my-8 p-0.8 h-12 rounded-xl inputFieldColor primaryColorW pl-2.5" type="date" id="coinLaunch" placeholder="enter your coin name"/>
 
                             <div className="flex flex-col">
                                 <label className="text-justify  primaryColorW font-light tracking-wide text-lg" name="coinDescription">Description</label>
                                 <textarea maxLength="1800" value={reqFields.coinDescription} onInput ={(e) => {reqFieldsDispatch({ type: "coinDescCounterInp", payload: e.target.value}); uiFieldsDispatch({ type: "coinDescCounterInp", payload: e.target.value})}} id="coinDescription" className="h-64 p-1 rounded-xl rounded-b-none inputFieldColor primaryColorW pl-2.5" placeholder="1800 chars (max)"></textarea>
-                                <div className="flex justify-end p-1 w-135 rounded-xl border-1 border-t-0 inputFieldColor primaryColorP pl-2.5 mb-6 rounded-t-none primaryColorP font-normal text-xs tracking-wide">
+                                <div className="flex justify-end p-1 rounded-xl border-1 border-t-0 inputFieldColor primaryColorP pl-2.5 mb-6 rounded-t-none primaryColorP font-normal text-xs tracking-wide">
                                     <p>{uiFields.coinDescCounter}/1800</p>
                                 </div>
                             </div>
@@ -786,7 +786,9 @@ const AddCoin = () => {
                     </div>
                 </div>
 
-        </div>
+    </div>
+
+    </div>
     );
 }
 
